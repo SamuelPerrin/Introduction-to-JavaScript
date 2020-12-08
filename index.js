@@ -67,9 +67,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(a,b){
-    return a*b
-  }
+function multiply (a, b) {
+  return a*b
+}
 
 
 
@@ -83,8 +83,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(humanYears){
-    return 7*humanYears
+function dogYears (humanYears) {
+  return 7*humanYears
 }
 
 
@@ -117,24 +117,24 @@ Use the hungryDog function and feeding requirements below to do the following:
 */  
 
 function hungryDog(weight,age){
-    if (age>=1) {
-      if (weight <= 5) {
-        return 0.05*weight
-      } else if (weight <= 10) {
-        return 0.04*weight
-      } else if (weight <= 15) {
-        return 0.03*weight
-      } else if (weight > 15) {
-        return 0.02*weight
-      }
-      } else if (age >= 1/6 && age < 1/3) {
-        return 0.1*weight
-      } else if (age >= 1/3 && age < 7/12) {
-        return 0.05*weight
-      } else if (age >= 7/12 && age < 1) {
-        return 0.04*weight
-      }
-  }
+  if (age>=1) {
+    if (weight <= 5) {
+      return 0.05*weight
+    } else if (weight <= 10) {
+      return 0.04*weight
+    } else if (weight <= 15) {
+      return 0.03*weight
+    } else if (weight > 15) {
+      return 0.02*weight
+    }
+    } else if (age >= 1/6 && age < 1/3) {
+      return 0.1*weight
+    } else if (age >= 1/3 && age < 7/12) {
+      return 0.05*weight
+    } else if (age >= 7/12 && age < 1) {
+      return 0.04*weight
+    }
+}
 
 
 
@@ -158,16 +158,16 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let computerChoice = ['rock','paper','scissors'][Math.floor(3*Math.random())];
+let computerChoice = ['rock', 'paper', 'scissors'][Math.floor(3 * Math.random())];
 
 function game(user, computer){
-  const win = ['paperrock','rockscissors','scissorspaper']
+  const win = ['paperrock', 'rockscissors', 'scissorspaper']
   if (user === computer) {
     return "it's a tie"
-  } else if (win.includes(user+computer)) {
-    return "you win!"
+  } else if (win.includes(user + computer)) {
+    return 'you win!'
   } else {
-    return "you lose!"
+    return 'you lose!'
   }
 }
   
@@ -184,9 +184,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(km){
-  return km*0.621371
-  }
+function miles (km) {
+  return km * 0.621371
+}
 
 
 
@@ -198,9 +198,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(cm){
-  return cm/30.48
-  }
+function feet (cm) {
+  return cm / 30.48
+}
  
 
 
@@ -214,8 +214,8 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(num){
-  return `${num} bottles of soda on the wall, ${num} bottles of soda, take one down pass it around ${num-1} bottles of soda on the wall`
+function annoyingSong (num) {
+  return `${num} bottles of soda on the wall, ${num} bottles of soda, take one down pass it around ${num - 1} bottles of soda on the wall`
   }
 
 
@@ -235,20 +235,20 @@ Using the grade function below do the following:
 */
   
 function grade(score){
-    if (score>=90) {
-      return 'you got an A'
-    } else if (score>=80) {
-      return 'you got a B'
-    } else if (score >=70) {
-      return 'you got a C'
-    } else if (score >=60) {
-      return 'you got a D'
-    } else {
-      return 'you got an F'
-    }
+  if (score >= 90) {
+    return 'you got an A'
+  } else if (score >= 80) {
+    return 'you got a B'
+  } else if (score >= 70) {
+    return 'you got a C'
+  } else if (score >= 60) {
+    return 'you got a D'
+  } else {
+    return 'you got an F'
   }
+}
   
-  console.log('grade function', grade(85));
+console.log('grade function', grade(85));
   
   
 
@@ -265,7 +265,7 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(str) {
+function vowelCounter (str) {
   return str.match(/[aeiou]/gi || []).length
 }
 
