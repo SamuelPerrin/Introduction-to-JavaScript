@@ -17,7 +17,7 @@ Do the following:
 
    HINT: no function required
 */
-const votingAge = 18;
+const votingAge = 18
 if (votingAge >= 18) {
   console.log(true)
 }
@@ -34,8 +34,9 @@ Do the following:
    HINT: no function required
 */
 
-let a = 1, b=2;
-if (b===2) {
+let a = 1
+const b = 2
+if (b === 2) {
   a++
   console.log(a)
 }
@@ -53,8 +54,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-let myVar = '1999';
-myVar = Number(myVar);
+let myVar = '1999'
+myVar = Number(myVar)
 console.log(myVar)
 
 
@@ -68,7 +69,7 @@ Do the following:
 */
 
 function multiply (a, b) {
-  return a*b
+  return a * b
 }
 
 
@@ -84,7 +85,7 @@ Do the following:
 */
 
 function dogYears (humanYears) {
-  return 7*humanYears
+  return 7 * humanYears
 }
 
 
@@ -116,24 +117,24 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(weight,age){
-  if (age>=1) {
+function hungryDog (weight, age) {
+  if (age >= 1) {
     if (weight <= 5) {
-      return 0.05*weight
+      return 0.05 * weight
     } else if (weight <= 10) {
-      return 0.04*weight
+      return 0.04 * weight
     } else if (weight <= 15) {
-      return 0.03*weight
+      return 0.03 * weight
     } else if (weight > 15) {
-      return 0.02*weight
+      return 0.02 * weight
     }
-    } else if (age >= 1/6 && age < 1/3) {
-      return 0.1*weight
-    } else if (age >= 1/3 && age < 7/12) {
-      return 0.05*weight
-    } else if (age >= 7/12 && age < 1) {
-      return 0.04*weight
-    }
+  } else if (age >= 1 / 6 && age < 1 / 3) {
+    return 0.1 * weight
+  } else if (age >= 1 / 3 && age < 7 / 12) {
+    return 0.05 * weight
+  } else if (age >= 7 / 12 && age < 1) {
+    return 0.04 * weight
+  }
 }
 
 
@@ -158,9 +159,9 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let computerChoice = ['rock', 'paper', 'scissors'][Math.floor(3 * Math.random())];
+const computerChoice = ['rock', 'paper', 'scissors'][Math.floor(3 * Math.random())]
 
-function game(user, computer){
+function game (user, computer) {
   const win = ['paperrock', 'rockscissors', 'scissorspaper']
   if (user === computer) {
     return "it's a tie"
@@ -216,7 +217,7 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong (num) {
   return `${num} bottles of soda on the wall, ${num} bottles of soda, take one down pass it around ${num - 1} bottles of soda on the wall`
-  }
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -234,7 +235,7 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(score){
+function grade (score) {
   if (score >= 90) {
     return 'you got an A'
   } else if (score >= 80) {
@@ -248,7 +249,7 @@ function grade(score){
   }
 }
   
-console.log('grade function', grade(85));
+console.log('grade function', grade(85))
   
   
 
